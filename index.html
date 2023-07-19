@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <title>Nutriclick</title>
+  <!--Link Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!--Link css-->
+
+  <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+  <!--Link de google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Quicksand&display=swap" rel="stylesheet">
+  <!--Link iconos Bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+  <!--Barra de navegacion-->
+  <section class="barra-navegacion">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <p class="navbar-brand" >NutriClick<i class="bi bi-escape"></i></p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+          aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#acerca-de">Acerca de </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#articulos"><i class="bi bi-book"></i>Artículos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-plus-square"></i> Extra
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="http://localhost:3000/formulario/index.php" target="_blank"
+                    rel="noopener noreferrer"><i class="bi bi-person-fill-check"></i>Iniciar Sesión</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="http://127.0.0.1:5500/calculadora/index.html" target="_blank"
+                    rel="noopener noreferrer"><i class="bi bi-clipboard2-pulse"></i>Calculadora IMC</a>
+                </li>
+               
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!--Carousel-->
+
+  <section class="imagenes-comida">
+    <div class="container text-center contenedor-imagenes">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/comida6.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Alimentación sana y natural</h5>
+              <p>
+                Para mas información
+                <a href="http://localhost:3000/formulario/index.php" target="_blank" rel="noopener noreferrer"><button
+                    type="button" class="btn btn-success">
+                    Iniciar Sesión
+                  </button></a>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/comida7.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/comida8.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--Acerca de-->
+
+  <section id="acerca-de" class="acerca-de">
+    <div class="container text-center contenedor-acerca-de">
+      <h2>
+        Somos un grupo de nutricionistas cuya misión principal es ayudarte a
+        comer saludable
+      </h2>
+      <h3>Tenemos distintos tipos de recetas:</h3>
+
+      <div class="row fila-uno">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="imagenes/comida9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"> Pollo al horno con ensalada de  quinoa y brocolí.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="imagenes/comida13.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Calabacines rellenos con pollo desmechado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="imagenes/comida8-nueva.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Ensalada de pollo palta y verduras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!--fila 2 -->
+     <div class="row fila-dos">
+      <div class="col-12 col-md-6 col-lg-4 foto-cuatro">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/comida7.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Ensalada de verduras verdes con semillas chía.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 foto-cinco">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/comida6.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text"> Carbohidratos justos: Fideos integrales con palta, choclo, cebolla morada y  tomate cherry.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 foto-seis">
+        <div class="card" style="width: 18rem;">
+          <img src="imagenes/fideos.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Pasta casera de morron con salsa de camarones y perejil para aromatizar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+
+
+      
+        
+
+      
+  </section>
+
+  <!--Articulos-->
+ 
+
+  <section id="articulos" class="articulos">
+    <h2 class="titulo-articulo">Algunos artículos interesantes para leer</h2>
+    <hr class="featurette-divider" style="color: green;">
+    <div class="row featurette">
+      <div class="col-md-7 columna" >
+        <h2 class="featurette-heading">Alimentación saludable. <span class="text-muted">Los beneficios para nuestra
+            salud.</span></h2>
+        <p class="lead">Una alimentación saludable significa que aporta todos los nutrientes importantes y la energía
+          que cada persona necesita para mantenerse sana. ¿Y cuáles son esos nutrientes esenciales?, pues son: las
+          proteínas, hidratos de carbono, lípidos, vitaminas, minerales y agua. De acuerdo a las Guías Alimentarias, la
+          alimentación saludable comienza con:Elegir alimentos naturales como la base de la alimentación.
+          Evitar alimentos procesados y ultra-procesados para prevenir enfermedades.
+          Practicar un estilo de vida saludable.
+          Una alimentación balanceada, según el MINSA, significa que se variada, es decir que puede contener cereales, tubérculos y menestras, así como verduras, frutas, lácteos, carne, huevos, grasas y azúcares.
+        
+        </p>    
+         
+        
+      </div>
+      <div class="col-md-5 columna2">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto foto-uno" width="500"
+          height="500"src="imagenes/alimentacion-saludable.jpg" aria-label="Placeholder: 500x500"
+         >
+          <title>Alimentacion Saludable</title>
+         
+      </img>
+      </div>
+    </div>
+    <hr class="featurette-divider" style="color: green;">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Alimentación consciente y yoga: <span class="text-muted">qué debes comer si lo practicas</span></h2>
+        <p class="lead">La práctica de yoga está directamente relacionada con la alimentación, pero no solo con un tipo de nutrición vegetariana o vegana, sino con un estilo de vida íntegro que te permite estar en equilibrio contigo mismo y con tu entorno, a nivel físico, mental y espiritual''.
+
+          Concretamente, el estilo de yoga que más tiene presente este tipo de principios en su práctica es el jivamukti yoga, el cual imparten en THECLASSyoga a través de diferentes programas que ayudan a desintoxicar el cuerpo y la mente. Este mismo principio de no violencia también se aplica a uno mismo; es decir, no hacerte daño a ti mismo. Esto se consigue eliminando las toxinas del cuerpo y depurándote.
+          
+          Las personas que siguen una dieta yóguica integran una alimentación vegetariana en sus vidas a base de alimentos naturales
+          Somos lo que comemos. Y por eso, siguiendo estos principios, las personas que siguen una dieta yóguica integran una alimentación vegetariana en sus vidas a base de alimentos naturales, lo menos procesados y precocinados posible, los cuales limpian y nutren el cuerpo sin generar residuos. Principalmente, comen verduras y frutas, así como de determinados lácteos (leche, queso y yogur descremados); aunque, dependiendo de cada persona, el consumo de estos últimos podía variar o incluso ser nulo.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" src="imagenes/yoga.jpg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          
+          
+      </img>
+      </div>
+    </div>
+    <hr class="featurette-divider" style="color: green;">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Índice de masa corporal: <span class="text-muted">como determinar una buena salud.</span></h2>
+        <p class="lead">Una buena forma de determinar si su peso es saludable para su estatura es determinar el índice de masa corporal.El IMC es una medida que se basa en la relación entre el peso y la talla de las personas para poder obtener un diagnóstico nutricional de la persona. De esta forma se puede saber si tienen un peso dentro de lo normal, o si hay que realizar ajustes en su nutrición para llegar al IMC adecuado, según la estatura y actividad física de cada persona. Este indicador nos permite saber de forma rápida como nos encontramos, para evitar padecer enfermedades producto del sobrepeso o bajo peso, como es el caso de la diabetes tipo 2, enfermedades cardiacas, entre otras.
+
+          ¿Cómo se calcula  el índice de masa corporal?
+          La fórmula del IMC es el peso dividido entre la estatura (al cuadrado) de cada persona. Es decir:
+          
+          IMC = Peso (Kg)/ (Estatura (m2). 
+          Si quiere medir su IMC  <a href="http://127.0.0.1:5500/calculadora/index.html" target="_blank" rel="noopener noreferrer"><button
+            type="button" class="btn btn-success">
+            Click aquí
+          </button></a></p>
+      </div>
+      <div class="col-md-5 columna3">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto foto-tres" width="500"
+          height="500" src="imagenes/imc.jpg" role="img" aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice" focusable="false">
+          
+      </img>
+      </div>
+    </div>
+    <hr class="featurette-divider" style="color: green;">
+   
+    </div>
+
+  </section>
+
+
+
+
+  <!-- FOOTER -->
+  <section class="seccion-pie-pagina">
+
+    <footer class="container-flex pie-de-pagina">
+      <div class="iconos-redes">
+      <p class="float-end"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+        <a href="mailto:florzoni@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope-check-fill"></i></a>
+        
+      </p>
+
+      </div>
+      <p class="footer-nutriclick"> <b>© 2017–2022 NutriClick.</b> </p>
+    </footer>
+  
+
+
+  </section>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

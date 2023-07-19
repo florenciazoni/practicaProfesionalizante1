@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMC</title>
+<link rel ="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+<h1>Calculadora de IMC :Índice de masa corporal</h1>
+<p>Ingrese su peso</p><input type="number" id="kg">
+<p>Ingrese su altura</p><input type="text" id="altura">
+<button id="calc">Calcular</button>
+<p>IMC:<span id="imc"></span></p>
+<p>Usted tiene: <span id="lectura"></span></p>
+<table border width="80%" heigth="600px" id="tableP">
+<tr align="center" id="Inicio">
+<td> Índice de masa corporal</td>
+<td>Rango</td>
+</tr>
+<tr id="15oM">
+<td>15 o Menos</td>
+<td>Delgadez muy severa</td>
+</tr>
+<tr id="DelgadezS">
+<td> 15 - 15,9</td>
+<td>Delgadez severa</td>
+</tr>
+<tr id="Delgadez">
+<td>16- 18,4</td>
+<td>Delgadez</td>
+</tr>
+<tr id="PesoS">
+<td>18,5 - 24,9</td>
+<td>Peso saludable</td>
+</tr>
+<tr id="Sobrepeso">
+<td>25 - 29,9</td>
+<td>Sobrepeso</td>
+</tr>
+<tr id="ObesidadS">
+<td>30 - 34,9</td>
+<td>Obesidad severa</td>
+</tr>
+</table>
+<script type="text/javascript">
+calc = document.getElementById("calc");
+kg = document.getElementById("kg");
+altura = document.getElementById("altura");
+imc = document.getElementById("imc");
+lectura = document.getElementById("lectura");
+calc.onclick = function () {
+if (kg.value != "" && altura.value != "")
+imcx = (kg.value / (altura.value * altura.value))
+imc.innerHTML = imcx;
+console.log(imcx);
+if (imcx > 0 && imcx <= 15) {
+lectura.innerHTML = "Delgadez muy severa";
+document.getElementById("15oM").style.backgroundColor = "#F1c40F"
+}
+else if (imcx >= 15.1 && imcx <= 15.9) {
+lectura.innerHTML = "Delgadez severa";
+document.getElementById("DelgadezS").style.backgroundColor = "#F9E79F";
+}
+else if (imcx >= 16 && imcx <= 18.4) {
+lectura.innerHTML = "Delgadez ";
+document.getElementById("Delgadez").style.backgroundColor = "#FCF3CF";
+}
+else if (imcx>=18.5 && imcx <=24.9) {
+lectura.innerHTML = "Peso saludable ";
+document.getElementById("PesoS").style.backgroundColor = "#ABB2B9";
+}
+else if (imcx>=25 && imcx<=29.9) {
+lectura.innerHTML = "Sobrepeso ";
+document.getElementById("Sobrepeso").style.backgroundColor = "#E59866";
+}
+else if (imcx >=30 ) {
+lectura.innerHTML = "Obesidad severa ";
+document.getElementById("ObesidadS").style.backgroundColor = "#BA4A00";
+}
+else {
+alert("Ingrese los datos de peso y altura");
+}
+}
+</script>
+</body>
+</html>

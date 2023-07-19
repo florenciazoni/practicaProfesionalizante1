@@ -1,0 +1,333 @@
+.navbar{
+
+position: relative;
+background-color:#6BEC71;
+
+
+
+}
+
+.barra-navegacion{
+
+position: relative;
+background-color: #6BEC71;
+padding: 10px;
+
+
+
+}
+.navbar-brand:hover{
+
+color: white;
+
+
+}
+.navbar-collapse{
+display: flex;
+position: relative;
+flex-grow: 0;
+padding: 15px 90px ;
+font-size: 28px;
+font-family: 'Amatic SC', cursive;
+
+
+}
+
+.navbar-collapse a{
+
+color: white;
+
+
+}
+
+.navbar-collapse a:hover{
+
+color: black;
+transition: all 0.2s ease-in;
+
+
+}
+
+.navbar-brand{
+
+    font-family:'Amatic SC', cursive; 
+    color: white;
+    font-size: 35px;
+    
+    
+}
+
+
+
+.dropdown-menu{
+
+
+background-color: rgb(88, 196, 88);
+
+}
+
+.dropdown-menu a:hover{
+
+color: black;
+
+
+
+}
+.nav-item{
+
+margin: 0 20px;
+
+
+}
+
+.imagenes-comida{
+
+padding: 40px 20px;
+align-items: center;
+justify-content: center;
+position: relative;
+
+
+
+
+}
+
+
+.carousel-caption h5{
+
+color: black;
+font-family:'Amatic SC', cursive;
+font-size: 40px;
+
+}
+.carousel-caption p{
+
+    color: black;
+    font-family:'Amatic SC', cursive;
+    font-size: 25px;
+
+
+}
+
+.acerca-de{
+
+background-color: #6BEC71;
+
+
+}
+
+.container h2{
+
+padding: 20px;
+font-family:'Amatic SC', cursive;
+font-size: 40px;
+
+}
+.container h3{
+
+    padding: 20px;
+    font-family:'Amatic SC', cursive;
+    font-size: 35px;
+}
+
+
+
+.row{
+   
+   flex-wrap: wrap;
+   
+    align-items: center;
+
+justify-content: center;
+
+
+}
+
+
+
+.column{
+
+margin-right: 40px;
+margin-bottom: 50px;
+
+}
+
+.titulo-articulo{
+
+ text-align: center;
+ margin-top: 30px;
+ margin-bottom: 40px;
+ font-family: 'Amatic SC', cursive ;
+ font-size: 40px;
+
+}
+
+.articulos{
+
+
+margin-left: 30px;
+margin-right: 30px;
+
+}
+
+.columna2 .foto-uno{
+
+
+height: 500px;
+
+
+}
+
+.columna3 .foto-tres{
+
+height: 400px;
+
+
+}
+
+.contenedor-imagenes{
+
+
+max-width: 800px;
+
+}
+
+.foto-cuatro, .foto-cinco, .foto-seis{
+
+margin-bottom: 30px;
+
+
+}
+
+.bi-instagram{
+
+color: black;
+font-size: 1.5rem;
+transition: all 0.2s ease-in;
+
+
+}
+
+.bi-instagram:hover{
+
+color:white;
+
+
+}
+
+.bi-twitter{
+
+color: black;
+
+
+
+}
+.bi-twitter:hover{
+
+color: white;
+
+
+
+}
+.seccion-pie-pagina{
+
+padding: 20px 30px 40px 30px;
+background-color: #6BEC71;
+
+}
+
+.iconos-redes{
+
+    padding: 5px;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+
+}
+
+.bi-envelope-check-fill{
+
+color: black;
+
+}
+
+.bi-envelope-check-fill:hover{
+
+color: white;
+
+
+}
+
+.footer-nutriclick{
+
+font-size: 1rem;
+font-family: 'Quicksand', sans-serif;
+
+
+
+}
+
+.bi-escape{
+
+padding: 5px;
+font-size: 1.5rem;
+
+
+}
+
+.bi-book{
+    font-size: 1.5rem;
+   
+    padding: 7px;
+
+
+}
+
+.bi-book:hover{
+
+    transition: all 0.2s ease-in;
+
+}
+
+.bi-plus-square{
+
+    font-size: 1.4rem;
+   
+    padding: 7px;
+
+}
+.bi-plus-square:hover{
+
+    transition: all 0.2s ease-in;
+
+}
+.bi-person-fill-check{
+
+    font-size: 1rem;
+   
+    padding: 7px;
+
+
+}
+.bi-clipboard2-pulse{
+
+    font-size: 1rem;
+   
+    padding: 7px;
+
+
+}
+
+.container .fila-uno{
+
+margin-bottom: 40px;
+
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
