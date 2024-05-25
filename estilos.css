@@ -132,25 +132,11 @@ font-size: 40px;
 
 
 
-.row{
-   
-   flex-wrap: wrap;
-   
-    align-items: center;
-
-justify-content: center;
-
-
-}
 
 
 
-.column{
 
-margin-right: 40px;
-margin-bottom: 50px;
 
-}
 
 .titulo-articulo{
 
@@ -317,12 +303,7 @@ font-size: 1.5rem;
 
 }
 
-.container .fila-uno{
 
-margin-bottom: 40px;
-
-
-}
 
 
 
@@ -334,6 +315,7 @@ margin-bottom: 40px;
 
     align-items: center;
     justify-content: center;
+    margin-right: 20px;
 
 
     }
