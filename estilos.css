@@ -332,7 +332,8 @@ margin-bottom: 40px;
     }
     .acerca-de{
 
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 
 
     }
